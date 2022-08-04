@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hooke's Law Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="forceRadio" name="variables" checked>
+  <label for="forceRadio">Force</label>
+
+  <input type="radio" id="springForceConstantRadio" name="variables">
+  <label for="springForceConstantRadio">Spring Force Constant</label>
+
+  <input type="radio" id="distancefromEquilibriumRadio" name="variables">
+  <label for="distancefromEquilibriumRadio">Distance from Equilibrium</label>
+
+  <input type="radio" id="springEquilibriumPositionRadio" name="variables">
+  <label for="springEquilibriumPositionRadio">Spring Equilibrium Position</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(k) Spring Force Constant (N/m)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(x) Distance from Equilibrium (m)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(x0) Spring Equilibrium Position (m)</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
